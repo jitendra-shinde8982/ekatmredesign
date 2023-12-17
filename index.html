@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="asset/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="main-panel">
+            <div>
+                <div class="horizontal-nav">
+                    <div class="logo">
+                        <img src="asset/images/ekatm_logo.png" alt="" class="logo-img">
+                        <div id="openmenu">
+                            <span class="d-none-block" id="showicon" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 31 23" fill="none">
+                                    <path d="M2 21H29M2 11.5H29M2 2H29" stroke="#0063A9" stroke-width="3" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <span class="d-none-block" id="closeicon" style="display: none;" >
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="18" viewBox="0 0 26 23" fill="none">
+                                    <path d="M2 21L24.5 2M2 2L24.5 21" stroke="#0063A9" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                  </svg>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="width30per w-50per-resp">
+                        <h3 class="Dashboard-heading">Dashboard</h3>
+                        <p class="Dashboard-Subheading d-none-resp">Hello, Gauri Welcome to <span>Ekatm</span></p>
+                    </div>
+                    <div class="width40per d-none-resp">
+                        <input type="text" placeholder="Search" class="input-search">
+                    </div>
+                    <div class="width30per mar-t10px w-50per-resp">
+                        <span class="icon-right">
+                            <img src="asset/images/user_logo.png" alt="" class="user-logo brd-green">
+                        </span>
+        
+        
+                        <span class="icon-right d-none-resp">
+                            <img src="asset/images/side_icon.png" alt="" class="theme-chng brd-yellow">
+                        </span>
+        
+                        <span class="icon-right mar-t8px">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 27 33" fill="none">
+                                <path
+                                    d="M22.4988 13.5C24.9841 13.5 26.9988 11.4853 26.9988 9C26.9988 6.51472 24.9841 4.5 22.4988 4.5C20.0135 4.5 17.9988 6.51472 17.9988 9C17.9988 11.4853 20.0135 13.5 22.4988 13.5Z"
+                                    fill="#DC2121"></path>
+                                <path
+                                    d="M23.8846 17.5343V14.625H21.8077V18C21.8078 18.2983 21.9172 18.5844 22.112 18.7954L24.9231 21.8407V23.625H2.07692V21.8407L4.88804 18.7954C5.0828 18.5844 5.19225 18.2983 5.19231 18V13.5C5.1896 11.9192 5.57198 10.3657 6.30083 8.99625C7.02968 7.62681 8.0792 6.48998 9.34338 5.70055C10.6076 4.91113 12.0417 4.49707 13.5008 4.5002C14.96 4.50333 16.3926 4.92354 17.6538 5.71838V3.20175C16.6653 2.72759 15.6139 2.42537 14.5385 2.30625V0H12.4615V2.30625C9.90129 2.58855 7.5286 3.88926 5.80227 5.95685C4.07594 8.02445 3.1186 10.7121 3.11538 13.5V17.5343L0.304269 20.5796C0.109506 20.7906 5.88158e-05 21.0767 0 21.375V24.75C0 25.0484 0.109409 25.3345 0.304158 25.5455C0.498908 25.7565 0.763044 25.875 1.03846 25.875H8.30769V27C8.30769 28.4918 8.85474 29.9226 9.82848 30.9775C10.8022 32.0324 12.1229 32.625 13.5 32.625C14.8771 32.625 16.1978 32.0324 17.1715 30.9775C18.1453 29.9226 18.6923 28.4918 18.6923 27V25.875H25.9615C26.237 25.875 26.5011 25.7565 26.6958 25.5455C26.8906 25.3345 27 25.0484 27 24.75V21.375C26.9999 21.0767 26.8905 20.7906 26.6957 20.5796L23.8846 17.5343ZM16.6154 27C16.6154 27.8951 16.2872 28.7536 15.7029 29.3865C15.1187 30.0194 14.3263 30.375 13.5 30.375C12.6737 30.375 11.8813 30.0194 11.2971 29.3865C10.7128 28.7536 10.3846 27.8951 10.3846 27V25.875H16.6154V27Z"
+                                    fill="#929292"></path>
+                            </svg>
+                        </span>
+                        <button id="serchboxshow" class="icon-right btn-search d-none-block">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="16" viewBox="0 0 15 16" fill="none">
+                                <path
+                                    d="M14.3752 15.4302L8.85042 9.90551C8.40926 10.2811 7.90192 10.5718 7.32841 10.7776C6.7549 10.9835 6.17856 11.0865 5.59938 11.0865C4.18619 11.0865 2.99016 10.5973 2.01129 9.61896C1.03241 8.64062 0.542969 7.44523 0.542969 6.03281C0.542969 4.62038 1.03214 3.42407 2.01048 2.4439C2.98881 1.46372 4.1842 0.973633 5.59663 0.973633C7.00907 0.973633 8.20537 1.46307 9.18553 2.44193C10.1657 3.4208 10.6558 4.61684 10.6558 6.03005C10.6558 6.64315 10.5472 7.23645 10.33 7.80997C10.1128 8.38348 9.82778 8.87385 9.47485 9.28109L14.9996 14.8058L14.3752 15.4302ZM5.59938 10.2041C6.77017 10.2041 7.75855 9.80115 8.56451 8.99517C9.37048 8.1892 9.77347 7.20082 9.77347 6.03005C9.77347 4.85927 9.37048 3.8709 8.56451 3.06492C7.75855 2.25895 6.77017 1.85596 5.59938 1.85596C4.42861 1.85596 3.44023 2.25895 2.63426 3.06492C1.8283 3.8709 1.42532 4.85927 1.42532 6.03005C1.42532 7.20082 1.8283 8.1892 2.63426 8.99517C3.44023 9.80115 4.42861 10.2041 5.59938 10.2041Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
+        
+        
+                    </div>
+                </div>
+                <div class="serchbox-resp d-none-block" id="serachBox" style="display: none;">
+        
+        
+                    <div class="width100per">
+                        <input type="text" placeholder="Search" class="input-search mar-0">
+                    </div>
+        
+                </div>
+            </div>
+        
+            <div class="panel-cards">
+                <div class="nav-panel">
+                    <div class="vertical-nav " style="display: none;">
+         
+                        <div class="nav-item" onclick="toggleSubSideNav()">
+                            <span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 32 33" fill="none">
+                                    <path
+                                        d="M25.4371 12.6281C28.6481 12.6281 31.2511 10.025 31.2511 6.81404C31.2511 3.60303 28.6481 1 25.4371 1C22.2261 1 19.623 3.60303 19.623 6.81404C19.623 10.025 22.2261 12.6281 25.4371 12.6281Z"
+                                        stroke="#0064AD" stroke-width="1.45351" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                    <path d="M24.791 4.23047V7.46049H28.021" stroke="#0064AD" stroke-width="1.45351"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M26.8899 15.171L26.5266 31.1596H14.5351H2.18027V6.08655H17.6354C17.6354 5.28711 17.7154 4.9967 17.9232 4.19727H3.19772C1.42299 4.19727 0 5.62025 0 7.39499V29.779C0 30.6271 0.336902 31.4405 0.936591 32.0402C1.53628 32.6399 2.34963 32.9768 3.19772 32.9768H25.5818C27.3565 32.9768 28.7068 33.2977 28.7068 31.523L28.7795 15.0535C27.9801 15.2614 27.9801 15.171 26.8899 15.171Z"
+                                        fill="#0064AD"></path>
+                                    <path
+                                        d="M9.23438 21.125C9.18229 20.8333 9.16667 20.5312 9.1875 20.2188C9.20833 19.9062 9.21875 19.6042 9.21875 19.3125C9.21875 19.0312 9.19792 18.7344 9.15625 18.4219C9.125 18.099 9.09375 17.7917 9.0625 17.5C9.04167 17.2083 9.03125 16.9427 9.03125 16.7031C9.04167 16.4531 9.07812 16.2604 9.14062 16.125C9.22396 15.9688 9.32812 15.849 9.45312 15.7656C9.57812 15.6719 9.69792 15.5677 9.8125 15.4531C9.94792 15.474 10.0677 15.5156 10.1719 15.5781C10.2865 15.6302 10.3802 15.7031 10.4531 15.7969C10.5365 15.8802 10.5938 15.9688 10.625 16.0625C10.6667 16.1562 10.6771 16.25 10.6562 16.3438C10.9167 16.5 11.125 16.7135 11.2812 16.9844C11.4479 17.2448 11.5729 17.5365 11.6562 17.8594C11.75 18.1719 11.8125 18.5052 11.8438 18.8594C11.8854 19.2135 11.9167 19.5625 11.9375 19.9062C11.9688 20.25 11.9948 20.5781 12.0156 20.8906C12.0469 21.1927 12.099 21.4583 12.1719 21.6875C12.6302 21.0208 13.0156 20.4323 13.3281 19.9219C13.651 19.401 13.974 18.9062 14.2969 18.4375C14.6198 17.9583 14.9792 17.474 15.375 16.9844C15.7812 16.4948 16.2969 15.9427 16.9219 15.3281C17.0573 15.349 17.1615 15.375 17.2344 15.4062C17.3073 15.4375 17.3802 15.4688 17.4531 15.5C17.526 15.5312 17.6042 15.5573 17.6875 15.5781C17.7708 15.5885 17.8854 15.5833 18.0312 15.5625C18.0833 15.6875 18.1198 15.7812 18.1406 15.8438C18.1719 15.8958 18.1979 15.9479 18.2188 16C18.2396 16.0521 18.2656 16.1198 18.2969 16.2031C18.3281 16.2865 18.375 16.4115 18.4375 16.5781C18.4688 16.6198 18.4792 16.6771 18.4688 16.75C18.4688 16.8125 18.4635 16.8698 18.4531 16.9219C18.4427 16.974 18.4375 17.0156 18.4375 17.0469C18.4479 17.0781 18.4844 17.0781 18.5469 17.0469C18.5052 17.224 18.4375 17.3854 18.3438 17.5312C18.25 17.6667 18.2083 17.8333 18.2188 18.0312C17.9375 18.4062 17.625 18.7917 17.2812 19.1875C16.9375 19.5833 16.5938 20 16.25 20.4375C15.9062 20.8646 15.5729 21.3125 15.25 21.7812C14.9375 22.2396 14.6719 22.7292 14.4531 23.25C14.3906 23.25 14.3438 23.2656 14.3125 23.2969C14.2812 23.3281 14.25 23.3646 14.2188 23.4062C14.1979 23.4479 14.1719 23.4896 14.1406 23.5312C14.1198 23.5729 14.0781 23.5938 14.0156 23.5938C13.9948 23.9271 13.8698 24.2448 13.6406 24.5469C13.4219 24.8385 13.1979 25.0885 12.9688 25.2969C12.9896 25.3802 13 25.4479 13 25.5C13 25.5521 12.9948 25.6042 12.9844 25.6562C12.974 25.7083 12.9635 25.7656 12.9531 25.8281C12.9531 25.8802 12.9583 25.9479 12.9688 26.0312C12.875 26.2812 12.75 26.4896 12.5938 26.6562C12.4479 26.8229 12.2865 26.9479 12.1094 27.0312C11.9323 27.1146 11.75 27.1458 11.5625 27.125C11.375 27.1146 11.1979 27.0521 11.0312 26.9375C10.9583 26.8958 10.8958 26.8385 10.8438 26.7656C10.7917 26.6927 10.7344 26.625 10.6719 26.5625C10.6198 26.4896 10.5625 26.4271 10.5 26.375C10.4479 26.3125 10.3802 26.2708 10.2969 26.25C10.3177 26.1458 10.3177 26.0365 10.2969 25.9219C10.2865 25.8073 10.2656 25.7031 10.2344 25.6094C10.2031 25.5156 10.1667 25.4375 10.125 25.375C10.0833 25.3125 10.0417 25.2812 10 25.2812C9.95833 25.0208 9.90104 24.7396 9.82812 24.4375C9.76562 24.125 9.69792 23.8177 9.625 23.5156C9.5625 23.2135 9.51042 22.9167 9.46875 22.625C9.42708 22.3333 9.41146 22.0625 9.42188 21.8125C9.43229 21.6875 9.40625 21.5781 9.34375 21.4844C9.29167 21.3802 9.25521 21.2604 9.23438 21.125Z"
+                                        fill="#0064AD"></path>
+                                </svg>
+                            </span>
+                            <h3>workbench</h3>
+                        </div>
+                    </div>
+        
+                    <div class="sub-side-nav" style="display: none;">
+                        <div class="padd-t25r5l5per">
+                            <h3 class="w-status-heading">Work status</h3>
+                            <ul class="w-status-list">
+                                <li class="w-status-Sublist">
+                                    <label>overdue</label>
+                                    <span>11</span>
+                                </li>
+                                <li class="w-status-Sublist">
+                                    <label>Critical</label>
+                                    <span>11</span>
+                                </li>
+                                <li class="w-status-Sublist">
+                                    <label>Today</label>
+                                    <span class="green-border">11</span>
+                                </li>
+                                <li class="w-status-Sublist">
+                                    <label>Tickets</label>
+                                    <span>11</span>
+                                </li>
+                            </ul>
+                        </div>
+        
+                        <div class="work-space">
+                            <h3 class="work-space-heading">Work space</h3>
+                            <div class="padd-0 work-space-text">
+                                <div>
+                                    <label>Retail Product 102 Assigned <span>99%</span> Overdue</label>
+                                </div>
+                                <div>
+                                    <label>Retail Product 102 Assigned <span>99%</span> Overdue</label>
+                                </div>
+                                <div>
+                                    <label>Retail Product 102 Assigned <span>99%</span> Overdue</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-sub-cards">
+                    <div class="workBench-heading">
+                        <span class="mar-l5px">&lt;</span>
+                        <span class="font-20">December </span>
+                        <span class="mar-r5px">&gt;</span>
+        
+                    </div>
+                    <div class="act-timing">
+                        <div class="d-none-resp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 36 48" fill="none"
+                                class="mar-10px">
+                                <rect y="5" width="36" height="36" rx="18" fill="white"></rect>
+                                <path d="M18.504 30.776L11.528 23.608L18.504 16.44H24.136L17.16 23.608L24.136 30.776H18.504Z"
+                                    fill="#0063A9">
+                                </path>
+                            </svg>
+                        </div>
+        
+        
+                        <div class="act-calCard">
+                            <h5>19</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5 class="bg-red">20</h5>
+                            <p>0 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>21</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>22</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>23</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>24</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>25</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>26</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>27</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="act-calCard">
+                            <h5>28</h5>
+                            <p>8 Hr</p>
+                        </div>
+                        <div class="d-none-resp">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="48" viewBox="0 0 36 48" fill="none"
+                                class="mar-10px">
+                                <rect y="5" width="36" height="36" rx="18" fill="white"></rect>
+                                <path
+                                    d="M17.496 17.224L24.472 24.392L17.496 31.56L11.864 31.56L18.84 24.392L11.864 17.224L17.496 17.224Z"
+                                    fill="#0063A9"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="activity-panel">
+                        <div class="work-navigation">
+                            <div class="just-center">
+                                <div class="padd-b10resp">
+                                    <h3 class="work-list-heading">Work List</h3>
+                                    <p class="work-list-subheading">Check you daily task and schedule</p>
+                                </div>
+                                <div class="d-none-resp">
+                                    <img src="asset/images/work-list-img.png" width="120" height="100" alt="">
+                                </div>
+                            </div>
+                            <div class="just-center">
+                                <div>
+        
+                                    <button class="btn-assign">
+                                        Assign work<span>+</span>
+                                    </button>
+                                </div>
+                                <div class="d-none-resp">
+                                    <button class="btn-filters">Incentive</button>
+                                    <button class="btn-filters">Export</button>
+                                    <button class="btn-filters">Role transfer</button>
+                                    <button class="btn-filters">Filters
+                                        <span class="mar-5px">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 18 14"
+                                                fill="none">
+                                                <path d="M1 1H17M3.85714 7H14.1429M7.28571 13H10.7143" stroke="#0063A9"
+                                                    stroke-width="1.78571" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="dropdown d-none-block">
+                                    <button class="btn-dropdown">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#0063A9"
+                                            class="bi bi-three-dots-vertical" viewBox="0 0 16 16">
+                                            <path
+                                                d="M9.5 13a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0m0-5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                    <div id="myDropdown" class="dropdown-popup" style="display: none;">
+                                        <ul class="popup-toggle">
+                                            <li>Incentive</li>
+                                            <li>Export</li>
+                                            <li>Role transfer</li>
+                                            <li class="brd-none"> Filters</li>
+                                        </ul>
+                                    </div>
+        
+                                </div>
+                            </div>
+                        </div>
+                        <div class="work-list-cards">
+        
+        
+                            <div class="container-box">
+                                <div class="act-calender">
+                                    <h5>Sep</h5>
+                                    <p>10</p>
+                                </div>
+                                <p class="act-name">RRF1114-Developer Maharashtra Audio Enterprise Product recruitment-
+                                    raised by</p>
+                                <div class=" work-depart">
+                                    <p>Under Recruitment Activities</p>
+                                    <p class="mar-5px">2 HR</p>
+                                </div>
+                                <div class="assing-by">
+                                    <h3>By -</h3>
+                                    <h3 class="mar-lr5px">Jitendra Shinde</h3>
+                                </div>
+                                <div class="just-center">
+                                    <button class="btn-msg">
+                                        Message
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                fill="none">
+                                                <path
+                                                    d="M4.2 6.2984C4.2 6.11274 4.27375 5.9347 4.40503 5.80342C4.5363 5.67215 4.71435 5.5984 4.9 5.5984H9.1C9.28565 5.5984 9.4637 5.67215 9.59497 5.80342C9.72625 5.9347 9.8 6.11274 9.8 6.2984C9.8 6.48405 9.72625 6.66209 9.59497 6.79337C9.4637 6.92464 9.28565 6.99839 9.1 6.99839H4.9C4.71435 6.99839 4.5363 6.92464 4.40503 6.79337C4.27375 6.66209 4.2 6.48405 4.2 6.2984ZM4.9 8.39839C4.71435 8.39839 4.5363 8.47214 4.40503 8.60342C4.27375 8.73469 4.2 8.91274 4.2 9.09839C4.2 9.28405 4.27375 9.46209 4.40503 9.59337C4.5363 9.72464 4.71435 9.79839 4.9 9.79839H7.7C7.88565 9.79839 8.0637 9.72464 8.19497 9.59337C8.32625 9.46209 8.4 9.28405 8.4 9.09839C8.4 8.91274 8.32625 8.73469 8.19497 8.60342C8.0637 8.47214 7.88565 8.39839 7.7 8.39839H4.9ZM7.87651e-06 6.99839C0.000358964 5.46372 0.505045 3.97168 1.43639 2.75191C2.36774 1.53215 3.67414 0.652256 5.15452 0.247653C6.63491 -0.156949 8.20723 -0.0638375 9.62952 0.512658C11.0518 1.08915 12.2452 2.11708 13.0261 3.43825C13.807 4.75941 14.132 6.30058 13.9513 7.82457C13.7705 9.34857 13.0939 10.7709 12.0256 11.8727C10.9573 12.9745 9.55649 13.6947 8.03881 13.9225C6.52112 14.1502 4.97065 13.8729 3.626 13.1332L0.904407 13.962C0.783014 13.999 0.653852 14.0023 0.530738 13.9715C0.407623 13.9407 0.295186 13.8771 0.205454 13.7873C0.115722 13.6976 0.052071 13.5852 0.0213084 13.4621C-0.00945414 13.3389 -0.00617065 13.2098 0.0308078 13.0884L0.859607 10.3626C0.293944 9.33163 -0.00175954 8.17434 7.87651e-06 6.99839ZM7 1.3984C6.00592 1.39832 5.02972 1.66285 4.17169 2.16484C3.31366 2.66682 2.60472 3.38816 2.11768 4.25476C1.63065 5.12137 1.38307 6.102 1.40039 7.09593C1.4177 8.08987 1.69928 9.06128 2.21621 9.91039C2.26752 9.99474 2.30041 10.089 2.31271 10.187C2.32502 10.2849 2.31646 10.3844 2.28761 10.4788L1.75141 12.2414L3.5112 11.7052C3.60593 11.6763 3.70569 11.6679 3.80392 11.6805C3.90214 11.693 3.99658 11.7262 4.081 11.778C4.81905 12.2286 5.65143 12.5022 6.5129 12.5772C7.37436 12.6523 8.24152 12.5269 9.04639 12.2107C9.85127 11.8946 10.572 11.3964 11.1521 10.7551C11.7322 10.1138 12.1559 9.34688 12.39 8.51444C12.6241 7.682 12.6622 6.80665 12.5014 5.957C12.3406 5.10735 11.9852 4.30649 11.4631 3.61717C10.941 2.92786 10.2663 2.36882 9.49201 1.98387C8.71769 1.59893 7.86473 1.39854 7 1.3984Z"
+                                                    fill="#0063A9"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="btn-today">Today</button>
+                                </div>
+                            </div>
+        
+                            <div class="container-box">
+                                <div class="act-calender">
+                                    <h5>Sep</h5>
+                                    <p>10</p>
+                                </div>
+                                <p class="act-name">RRF1114-Developer Maharashtra Audio Enterprise Product recruitment-
+                                    raised by</p>
+                                <div class=" work-depart">
+                                    <p>Under Recruitment Activities</p>
+                                    <p class="mar-5px">2 HR</p>
+                                </div>
+                                <div class="assing-by">
+                                    <h3>By -</h3>
+                                    <h3 class="mar-lr5px">Jitendra Shinde</h3>
+                                </div>
+                                <div class="just-center">
+                                    <button class="btn-msg">
+                                        Message
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                fill="none">
+                                                <path
+                                                    d="M4.2 6.2984C4.2 6.11274 4.27375 5.9347 4.40503 5.80342C4.5363 5.67215 4.71435 5.5984 4.9 5.5984H9.1C9.28565 5.5984 9.4637 5.67215 9.59497 5.80342C9.72625 5.9347 9.8 6.11274 9.8 6.2984C9.8 6.48405 9.72625 6.66209 9.59497 6.79337C9.4637 6.92464 9.28565 6.99839 9.1 6.99839H4.9C4.71435 6.99839 4.5363 6.92464 4.40503 6.79337C4.27375 6.66209 4.2 6.48405 4.2 6.2984ZM4.9 8.39839C4.71435 8.39839 4.5363 8.47214 4.40503 8.60342C4.27375 8.73469 4.2 8.91274 4.2 9.09839C4.2 9.28405 4.27375 9.46209 4.40503 9.59337C4.5363 9.72464 4.71435 9.79839 4.9 9.79839H7.7C7.88565 9.79839 8.0637 9.72464 8.19497 9.59337C8.32625 9.46209 8.4 9.28405 8.4 9.09839C8.4 8.91274 8.32625 8.73469 8.19497 8.60342C8.0637 8.47214 7.88565 8.39839 7.7 8.39839H4.9ZM7.87651e-06 6.99839C0.000358964 5.46372 0.505045 3.97168 1.43639 2.75191C2.36774 1.53215 3.67414 0.652256 5.15452 0.247653C6.63491 -0.156949 8.20723 -0.0638375 9.62952 0.512658C11.0518 1.08915 12.2452 2.11708 13.0261 3.43825C13.807 4.75941 14.132 6.30058 13.9513 7.82457C13.7705 9.34857 13.0939 10.7709 12.0256 11.8727C10.9573 12.9745 9.55649 13.6947 8.03881 13.9225C6.52112 14.1502 4.97065 13.8729 3.626 13.1332L0.904407 13.962C0.783014 13.999 0.653852 14.0023 0.530738 13.9715C0.407623 13.9407 0.295186 13.8771 0.205454 13.7873C0.115722 13.6976 0.052071 13.5852 0.0213084 13.4621C-0.00945414 13.3389 -0.00617065 13.2098 0.0308078 13.0884L0.859607 10.3626C0.293944 9.33163 -0.00175954 8.17434 7.87651e-06 6.99839ZM7 1.3984C6.00592 1.39832 5.02972 1.66285 4.17169 2.16484C3.31366 2.66682 2.60472 3.38816 2.11768 4.25476C1.63065 5.12137 1.38307 6.102 1.40039 7.09593C1.4177 8.08987 1.69928 9.06128 2.21621 9.91039C2.26752 9.99474 2.30041 10.089 2.31271 10.187C2.32502 10.2849 2.31646 10.3844 2.28761 10.4788L1.75141 12.2414L3.5112 11.7052C3.60593 11.6763 3.70569 11.6679 3.80392 11.6805C3.90214 11.693 3.99658 11.7262 4.081 11.778C4.81905 12.2286 5.65143 12.5022 6.5129 12.5772C7.37436 12.6523 8.24152 12.5269 9.04639 12.2107C9.85127 11.8946 10.572 11.3964 11.1521 10.7551C11.7322 10.1138 12.1559 9.34688 12.39 8.51444C12.6241 7.682 12.6622 6.80665 12.5014 5.957C12.3406 5.10735 11.9852 4.30649 11.4631 3.61717C10.941 2.92786 10.2663 2.36882 9.49201 1.98387C8.71769 1.59893 7.86473 1.39854 7 1.3984Z"
+                                                    fill="#0063A9"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="btn-today">Today</button>
+                                </div>
+                            </div>
+                            <div class="container-box">
+                                <div class="act-calender">
+                                    <h5>Sep</h5>
+                                    <p>10</p>
+                                </div>
+                                <p class="act-name">RRF1114-Developer Maharashtra Audio Enterprise Product recruitment-
+                                    raised by</p>
+                                <div class=" work-depart">
+                                    <p>Under Recruitment Activities</p>
+                                    <p class="mar-5px">2 HR</p>
+                                </div>
+                                <div class="assing-by">
+                                    <h3>By -</h3>
+                                    <h3 class="mar-lr5px">Jitendra Shinde</h3>
+                                </div>
+                                <div class="just-center">
+                                    <button class="btn-msg">
+                                        Message
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                                fill="none">
+                                                <path
+                                                    d="M4.2 6.2984C4.2 6.11274 4.27375 5.9347 4.40503 5.80342C4.5363 5.67215 4.71435 5.5984 4.9 5.5984H9.1C9.28565 5.5984 9.4637 5.67215 9.59497 5.80342C9.72625 5.9347 9.8 6.11274 9.8 6.2984C9.8 6.48405 9.72625 6.66209 9.59497 6.79337C9.4637 6.92464 9.28565 6.99839 9.1 6.99839H4.9C4.71435 6.99839 4.5363 6.92464 4.40503 6.79337C4.27375 6.66209 4.2 6.48405 4.2 6.2984ZM4.9 8.39839C4.71435 8.39839 4.5363 8.47214 4.40503 8.60342C4.27375 8.73469 4.2 8.91274 4.2 9.09839C4.2 9.28405 4.27375 9.46209 4.40503 9.59337C4.5363 9.72464 4.71435 9.79839 4.9 9.79839H7.7C7.88565 9.79839 8.0637 9.72464 8.19497 9.59337C8.32625 9.46209 8.4 9.28405 8.4 9.09839C8.4 8.91274 8.32625 8.73469 8.19497 8.60342C8.0637 8.47214 7.88565 8.39839 7.7 8.39839H4.9ZM7.87651e-06 6.99839C0.000358964 5.46372 0.505045 3.97168 1.43639 2.75191C2.36774 1.53215 3.67414 0.652256 5.15452 0.247653C6.63491 -0.156949 8.20723 -0.0638375 9.62952 0.512658C11.0518 1.08915 12.2452 2.11708 13.0261 3.43825C13.807 4.75941 14.132 6.30058 13.9513 7.82457C13.7705 9.34857 13.0939 10.7709 12.0256 11.8727C10.9573 12.9745 9.55649 13.6947 8.03881 13.9225C6.52112 14.1502 4.97065 13.8729 3.626 13.1332L0.904407 13.962C0.783014 13.999 0.653852 14.0023 0.530738 13.9715C0.407623 13.9407 0.295186 13.8771 0.205454 13.7873C0.115722 13.6976 0.052071 13.5852 0.0213084 13.4621C-0.00945414 13.3389 -0.00617065 13.2098 0.0308078 13.0884L0.859607 10.3626C0.293944 9.33163 -0.00175954 8.17434 7.87651e-06 6.99839ZM7 1.3984C6.00592 1.39832 5.02972 1.66285 4.17169 2.16484C3.31366 2.66682 2.60472 3.38816 2.11768 4.25476C1.63065 5.12137 1.38307 6.102 1.40039 7.09593C1.4177 8.08987 1.69928 9.06128 2.21621 9.91039C2.26752 9.99474 2.30041 10.089 2.31271 10.187C2.32502 10.2849 2.31646 10.3844 2.28761 10.4788L1.75141 12.2414L3.5112 11.7052C3.60593 11.6763 3.70569 11.6679 3.80392 11.6805C3.90214 11.693 3.99658 11.7262 4.081 11.778C4.81905 12.2286 5.65143 12.5022 6.5129 12.5772C7.37436 12.6523 8.24152 12.5269 9.04639 12.2107C9.85127 11.8946 10.572 11.3964 11.1521 10.7551C11.7322 10.1138 12.1559 9.34688 12.39 8.51444C12.6241 7.682 12.6622 6.80665 12.5014 5.957C12.3406 5.10735 11.9852 4.30649 11.4631 3.61717C10.941 2.92786 10.2663 2.36882 9.49201 1.98387C8.71769 1.59893 7.86473 1.39854 7 1.3984Z"
+                                                    fill="#0063A9"></path>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                    <button class="btn-today">Today</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function toggleSubSideNav() {
+            var subSideNav = document.querySelector('.sub-side-nav');
+            subSideNav.style.display = (subSideNav.style.display === 'none' || subSideNav.style.display === '') ? 'block' : 'none';
+        }
+
+
+        var menuIcon = document.getElementById('showicon');
+        var closeIcon = document.getElementById('closeicon');
+
+        menuIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'none';
+            closeIcon.style.display = 'inline-block';
+
+        });
+
+        closeIcon.addEventListener('click', function () {
+            menuIcon.style.display = 'inline-block';
+            closeIcon.style.display = 'none';
+        });
+
+
+        document.getElementById('openmenu').addEventListener('click', function () {
+            var verticalNav = document.querySelector('.vertical-nav');
+            verticalNav.style.display = (verticalNav.style.display === 'none' || verticalNav.style.display === '') ? 'block' : 'none';
+        });
+
+
+        document.getElementById('serchboxshow').addEventListener('click', function () {
+            var searchBox = document.getElementById('serachBox');
+            searchBox.style.display = (searchBox.style.display === 'none' || searchBox.style.display === '') ? 'block' : 'none';
+            this.classList.toggle('btn-search-clicked');
+        });
+
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var dropdown = document.getElementById("myDropdown");
+            var button = document.querySelector(".btn-dropdown");
+
+            button.addEventListener("click", function () {
+                if (dropdown.style.display === "block") {
+                    dropdown.style.display = "none";
+                } else {
+                    dropdown.style.display = "block";
+                }
+            });
+
+            window.addEventListener("click", function (event) {
+                if (!event.target.matches('.btn-dropdown')) {
+                    dropdown.style.display = "none";
+                }
+            });
+        });
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
